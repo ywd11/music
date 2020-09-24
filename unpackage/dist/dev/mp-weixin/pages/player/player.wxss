@@ -1,0 +1,331 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  height: 100%;
+}
+@-webkit-keyframes circle {
+0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+@keyframes circle {
+0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+.xuanzhuan {
+  -webkit-animation: circle 16s infinite linear;
+          animation: circle 16s infinite linear;
+}
+.player-index {
+  background-color: #575a5c;
+  height: 100%;
+  position: relative;
+}
+.player-index .bg {
+  position: absolute;
+  width: 100%;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.5;
+}
+.player-index .header {
+  padding: 12rpx 0;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.player-index .header .header-title {
+  text-align: center;
+  color: #fff;
+}
+.player-index .header .header-title view:nth-child(1) {
+  font-size: 32rpx;
+}
+.player-index .header .header-title view:nth-child(2) {
+  font-size: 24rpx;
+}
+.player-index .show-lryic {
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 500rpx;
+  width: 100%;
+  font-size: 28rpx;
+  overflow: hidden;
+  text-align: center;
+  color: #b0b0b3;
+  padding: 20rpx;
+}
+.player-index .show-lryic .scroll-Y {
+  height: 500rpx;
+}
+.player-index .show-lryic .lryic-item {
+  text-align: center;
+  line-height: 60rpx;
+}
+.player-index .show-lryic .lryic-item.lryic-active {
+  -webkit-transition: color,fontSzie 0.5s;
+  transition: color,fontSzie 0.5s;
+  color: #fff;
+  font-size: 32rpx;
+}
+.player-index .play-box {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: fucircle 16s infinite linear;
+          animation: fucircle 16s infinite linear;
+}
+.player-index .play-box .player-Lever {
+  width: 80rpx;
+  height: 80rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: -160rpx;
+  left: 50%;
+  z-index: 999;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  border-radius: 50%;
+}
+.player-index .play-box .player-Lever .lever-box {
+  background-color: #fefefe;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(40deg);
+          transform: translate(-50%, -50%) rotate(40deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.player-index .play-box .player-Lever .lever-box.player-bofang {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translate(-50%, -50%) rotate(75deg);
+          transform: translate(-50%, -50%) rotate(75deg);
+}
+.player-index .play-box .player-Lever .lever-box .lever-garden1 {
+  position: absolute;
+  width: 20rpx;
+  height: 20rpx;
+  background-color: #dad8d9;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.player-index .play-box .player-Lever .lever-box .lever-garden2 {
+  position: absolute;
+  width: 200rpx;
+  height: 20rpx;
+  left: 56rpx;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  background-color: #fefefe;
+  box-sizing: 0 0 2rpx 2rpx #000;
+}
+.player-index .play-box .player-Lever .lever-box .lever-garden2 .lever-garden3 {
+  width: 120rpx;
+  height: 20rpx;
+  position: absolute;
+  background-color: #fefefe;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  left: 97%;
+  top: 0;
+}
+.player-index .play-box .player-Lever .lever-box .lever-garden2 .lever-garden3 .lever-garden4 {
+  position: absolute;
+  height: 48rpx;
+  width: 40rpx;
+  background-color: #fefefe;
+  right: -40rpx;
+  top: -12rpx;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  line-height: 48rpx;
+  text-align: center;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  box-sizing: 0 0 0 10rpx #000;
+}
+.player-index .play-box .garden-1 {
+  width: 500rpx;
+  height: 500rpx;
+  background-color: rgba(57, 51, 37, 0.5);
+  border-radius: 250rpx;
+  position: relative;
+}
+.player-index .play-box .garden-1 .garden-2 {
+  width: 440rpx;
+  height: 440rpx;
+  box-shadow: 0 0 4rpx #000;
+}
+.player-index .play-box .garden-1 .garden-3 {
+  width: 400rpx;
+  height: 400rpx;
+}
+.player-index .play-box .garden-1 .garden-4 {
+  width: 380rpx;
+  height: 380rpx;
+}
+.player-index .play-box .garden-1 .garden-5 {
+  width: 360rpx;
+  height: 360rpx;
+}
+.player-index .play-box .garden-1 .garden-6 {
+  width: 340rpx;
+  height: 340rpx;
+}
+.player-index .play-box .garden-1 .garden-7 {
+  width: 320rpx;
+  height: 320rpx;
+}
+.player-index .play-box .garden-1 .garden-8 {
+  width: 300rpx;
+  height: 300rpx;
+}
+.player-index .play-box .garden-1 .garden-9 {
+  width: 280rpx;
+  height: 280rpx;
+}
+.player-index .play-box .garden-1 image {
+  width: 240rpx;
+  height: 240rpx;
+}
+.player-index .play-box .garden-1 .garden-box {
+  background-color: #090909;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 2rpx solid #171717;
+}
+.player-index .footer {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  height: 200rpx;
+}
+.player-index .footer .progress-box {
+  position: absolute;
+  width: 100%;
+  opacity: .6;
+  top: 0;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  font-size: 24rpx;
+  color: #fff;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.player-index .footer .progress-box progress {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  margin: 0 20rpx;
+}
+.player-index .footer .footer-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200rpx;
+  padding: 0 40rpx;
+  z-index: 2;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.player-index .footer .footer-bottom view {
+  font-size: 50rpx;
+  color: #fff;
+}
+.player-index .footer .footer-bottom view:nth-child(3) {
+  font-size: 100rpx;
+}
+.player-index .popup-box {
+  height: 600rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  padding: 20rpx;
+  margin: 20rpx;
+}
+.player-index .popup-box .title {
+  font-size: 28rpx;
+  font-weight: 700;
+}
+

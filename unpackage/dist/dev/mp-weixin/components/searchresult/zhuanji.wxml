@@ -1,0 +1,1 @@
+<view class="zhuanjiindex"><block wx:if="{{dataList.length>0}}"><view class="album-list"><view class="title"><view class="title-text">专辑</view></view><view class="content"><album-item vue-id="5ea5b63c-1" scrollTop="{{scrolltops}}" dataList="{{dataList}}" searchValue="{{searchValue}}" bind:__l="__l"></album-item></view></view></block></view>

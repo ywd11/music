@@ -1,0 +1,1 @@
+<view class="diantai-index"><block wx:if="{{dataList.length>0}}"><view class="djRadio-list"><view class="title"><view class="title-text">电台</view></view><view class="content"><radio-item vue-id="7d8d33ea-1" scrollTop="{{scrolltops}}" dataList="{{dataList}}" searchValue="{{searchValue}}" bind:__l="__l"></radio-item></view></view></block></view>

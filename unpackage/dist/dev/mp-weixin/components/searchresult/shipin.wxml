@@ -1,0 +1,1 @@
+<view class="shipin-index"><block wx:if="{{dataList.length>0}}"><view class="video-list"><view class="title"><view class="title-text">视频</view></view><view class="content"><video-item vue-id="2b72ff86-1" scrollTop="{{scrolltops}}" dataList="{{dataList}}" searchValue="{{searchValue}}" bind:__l="__l"></video-item></view></view></block></view>

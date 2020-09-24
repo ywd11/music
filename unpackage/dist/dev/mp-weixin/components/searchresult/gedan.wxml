@@ -1,0 +1,1 @@
+<view class="gedan-index"><block wx:if="{{dataList.length>0}}"><view class="play-list"><view class="title"><view class="title-text">歌单</view></view><view class="content"><song-list vue-id="29054e62-1" scrollTop="{{scrolltops}}" dataList="{{dataList}}" searchValue="{{searchValue}}" bind:__l="__l"></song-list></view></view></block></view>

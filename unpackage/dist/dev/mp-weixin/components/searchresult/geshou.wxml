@@ -1,0 +1,1 @@
+<view class="geshou-index"><block wx:if="{{dataList.length>0}}"><view class="artist-list"><view class="title"><view class="title-text">歌手</view></view><view class="content"><singer-item vue-id="28d88a0e-1" scrollTop="{{scrolltops}}" dataList="{{dataList}}" searchValue="{{searchValue}}" bind:__l="__l"></singer-item></view></view></block></view>

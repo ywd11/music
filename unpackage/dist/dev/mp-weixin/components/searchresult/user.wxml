@@ -1,0 +1,1 @@
+<view class="user-index"><block wx:if="{{dataList.length>0}}"><view class="user-list"><view class="title"><view class="title-text">用户</view></view><view class="content"><user-item vue-id="715edec8-1" scrollTop="{{scrolltops}}" dataList="{{dataList}}" searchValue="{{searchValue}}" bind:__l="__l"></user-item></view></view></block></view>

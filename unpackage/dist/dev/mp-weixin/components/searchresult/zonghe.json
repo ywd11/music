@@ -1,0 +1,12 @@
+{
+  "component": true,
+  "usingComponents": {
+    "songs-item": "/components/baseComponents/songsItem",
+    "song-list": "/components/baseComponents/songList",
+    "video-item": "/components/baseComponents/videoItem",
+    "radio-item": "/components/baseComponents/radioItem",
+    "singer-item": "/components/baseComponents/singerItem",
+    "album-item": "/components/baseComponents/albumItem",
+    "user-item": "/components/baseComponents/userItem"
+  }
+}

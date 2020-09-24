@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "v-tabs": "/components/v-tabs/v-tabs",
+    "zong-he": "/components/searchresult/zonghe",
+    "danqu": "/components/searchresult/danqu",
+    "gedan": "/components/searchresult/gedan",
+    "geshou": "/components/searchresult/geshou",
+    "zhuanji": "/components/searchresult/zhuanji",
+    "shipin": "/components/searchresult/shipin",
+    "diantai": "/components/searchresult/diantai",
+    "user": "/components/searchresult/user"
+  }
+}
